@@ -1,4 +1,125 @@
-#mainTitle{
-	font-family: "Ambroise", monospace;
-	font-size: 100px;
+body{
+	background-color: white;
+	margin: 0;
+	padding: 5%;
+	font-family: "Roboto", sans-serif;
+}
+/*==============================================================================================*/
+/*==============================================================================================*/
+#logo {
+	width: 60%;
+	height: auto;
+	display: block;
+	margin: 2% auto 8% auto;
+
+}
+input{
+	width:20em;
+	align-items: center;
+}
+.loginPage {
+
+	padding: 0 20% 0 20%;
+	margin: auto;
+	height: 100%;
+	background: url("/assets/Workplace.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.form {
+	position: relative;
+	z-index: 1;
+	background: #FFFFFF;
+	margin: 0 1% 0 1%;
+	padding: 10% 18% 18% 18%;
+	text-align: center;
+	/*box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);*/
+	opacity: 0.93;
+}
+.form input {
+	font-family: "Roboto", sans-serif;
+	font-weight: bolder;
+	outline: 0;
+	background: #f2f2f2;
+	width: 100%;
+	border: 0;
+	margin: 0 0 2% 0;
+	padding: 2%;
+	box-sizing: border-box;
+	font-size: 20px;
+}
+.form .button {
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: #f5e3ad;
+	width: 100%;
+	border: 0;
+	padding: 2%;
+	color: #474747;
+	font-size: 20px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+}
+.form .button:hover,.form .button:active,.form .button:focus {
+	background: #dbc686;
+}
+.quote{
+	font-family: "Roboto", sans-serif;
+	font-weight: lighter;
+	font-size: 18px;
+	margin: 0 0 20% 0;
+	color: #474747;
+}
+input[type="text"]{
+	background-color: #e6e6e6;
+}
+/*==============================================================================================*/
+/*==============================================================================================*/
+.title{
+	font-family: "Ambroise Light", monospace;
+	font-size: 65px;
+	color: #474747;
+	padding: 4% 0 4% 0;
+	text-align: center;
+}
+.breakPage{
+	margin:0;
+	/*box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);*/
+
+}
+/*==============================================================================================*/
+/*==============================================================================================*/
+.infoPage{
+	position: relative;
+	z-index: 1;
+	background: #f5e3ad;
+	margin: 0 20.5% 0 20.5%;
+	padding: 5%;
+	opacity: 0.90;
+	color: #474747;
+}
+.label{
+	margin:0;
+	padding: 0;
+	font-family: "Bodoni MT", monospace;
+	font-size: 40px;
+}
+.bodyText{
+	font-family: "Brandon Text Light", monospace;
+	font-size: 22px;
+}
+.background{
+	background: url("/assets/Comp.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.temp{
+	font-style: italic;
 }
