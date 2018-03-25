@@ -26,7 +26,7 @@ fake news platforms forced us to manually parse domains of different news platfo
 Hackathon, we didn't have time to collect enough data to train our model well enough, as it was overfitting.
 
 ## Contributors
-* Anna Brandenberger
+* Anna Brandenberger<br>
     Data Scientist
 * Peter Chen
 * Xing Han Lu
