@@ -33,6 +33,8 @@ function sendLink() {
 
 function verify(jsonFile){
 	if (jsonFile.SiteYN === 1){
+		document.getElementById("failDetail").innerHTML="";
+
 		document.getElementById("YN").innerHTML="Article Fiable!";
 		document.getElementById("score").innerHTML=(jsonFile.trustLevel * 100) + "% niveau de confiance";
 	} else {
