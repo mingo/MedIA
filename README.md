@@ -21,4 +21,14 @@ python3 main.py
 
 ## Description
 During the second edition of the Radio-Canada Hackathon, our team developed a neural network whose function is to
-differentiate fake news articles from legitimate news articles.
+differentiate fake news articles from legitimate news articles. The very limited access to French databases on
+fake news platforms forced us to manually parse domains of different news platforms, and due to the nature of the
+Hackathon, we didn't have time to collect enough data to train our model well enough, as it was overfitting.
+
+## Contributors
+* Anna Brandenberger
+* Peter Chen
+* Xing Han Lu
+* Yunke Xiao
+* Ming Zhao Zheng
+
