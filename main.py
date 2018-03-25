@@ -1,6 +1,6 @@
 from flask import Flask, send_from_directory, json, request
 
-from rule_based import rulebased
+from NeuralNetwork import algorithm, parse_media_press
 
 app = Flask(__name__, static_url_path='')
 
@@ -24,8 +24,14 @@ def send_assets(path):
 def mlApi():
 	url = request.args.get('link')
 	print('url = ' + str(url))
-	# xh function
-	xh = (1, 0.5)
+
+	bodyText = getRC(url)
+
+	if not bodyText:
+		bodyText = parse_media_press(url)
+	
+	if bodyText:
+		xh = algorithm(bodyText)
 
 	data = json.loads(json.dumps({'trustWorthy': xh[0], "trustLevel": xh[1]}))
 	rulebasedData = json.loads(rulebased(url))
