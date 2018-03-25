@@ -19,9 +19,9 @@
 					<!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 					<div id="p1" >
 						<label>
-							<input type="text" placeholder = "Insérer le lien à l'article">
+							<input type="text" id="link" placeholder = "Insérer le lien à l'article">
 						</label>
-						<input type="button" class="button" value="Analyser" onclick="hideDiv1()"/>
+						<input type="button" class="button" value="Analyser" onclick="hideDiv('analyse')"/>
 					</div>
 					<!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 					<div id="p2" style="display: none">
@@ -29,7 +29,7 @@
 						</h1>
 						<h1 class="title" id="score"></h1>
 						<h2 class="bodyText" id="failDetail"></h2>
-						<input id = "btn" type="button" class="button" value="Back" onclick="hideDiv2()"/>
+						<input id = "btn" type="button" class="button" value="Retour" onclick="hideDiv('retourner')"/>
 					</div>
 					<!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 				</form>
