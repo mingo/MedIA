@@ -18,3 +18,7 @@ To run:
 ```
 python3 main.py
 ```
+
+## Description
+During the second edition of the Radio-Canada Hackathon, our team developed a neural network whose function is to
+differentiate fake news articles from legitimate news articles.
