@@ -25,10 +25,12 @@ differentiate fake news articles from legitimate news articles. The very limited
 fake news platforms forced us to manually parse domains of different news platforms, and due to the nature of the
 Hackathon, we didn't have time to collect enough data to train our model well enough, as it was overfitting.
 
+## Usage
+
 ## Contributors
-* **Anna Brandenberger**
-* **Peter Chen**
-* **Xing Han Lu**
-* **Yunke Xiao**
-* **Ming Zhao Zheng**
+* **Anna Brandenberger**: Data Scientist :
+* **Peter Chen** : Back-End Developer :
+* **Xing Han Lu** : ML Engineer :
+* **Yunke Xiao** : Front-End Developer, Project Lead :
+* **Ming Zhao Zheng** : Back-End Developer : 
 
