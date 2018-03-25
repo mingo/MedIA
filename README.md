@@ -31,6 +31,6 @@ Hackathon, we didn't have time to collect enough data to train our model well en
 * **Anna Brandenberger**: Data Scientist [github](https://github.com/abrandenberger)
 * **Peter Chen** : Back-End Developer [github](https://github.com/mingo)
 * **Xing Han Lu** : ML Engineer [github](https://github.com/xhlulu)
-* **Yunke Xiao** : Front-End Developer, Project Lead [github](https://github.com/mingo)
+* **Yunke Xiao** : Front-End Developer, Project Lead [github](https://github.com/BrotherYunke)
 * **Ming Zhao Zheng** : Back-End Developer [github](https://github.com/Mskycoder)
 
