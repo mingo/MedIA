@@ -27,6 +27,7 @@ Hackathon, we didn't have time to collect enough data to train our model well en
 
 ## Contributors
 * Anna Brandenberger
+    Data Scientist
 * Peter Chen
 * Xing Han Lu
 * Yunke Xiao
