@@ -1,4 +1,7 @@
 from flask import Flask, send_from_directory, json, request
+
+from rule_based import rulebased
+
 app = Flask(__name__, static_url_path='')
 
 @app.route('/')
@@ -19,19 +22,18 @@ def send_assets(path):
 
 @app.route('/api/v1/ml')
 def mlApi():
-	link = request.args.get('link')
-	print('link = ' + str(link))
+	url = request.args.get('link')
+	print('url = ' + str(url))
 	# xh function
 	xh = (1, 0.5)
+
 	data = json.loads(json.dumps({'trustWorthy': xh[0], "trustLevel": xh[1]}))
-	# anna function
-	anna = json.loads('{"mydata": 1, "anotherData": 2}')
-	for key in anna.keys():
-		data[key] = anna.get(key)
+	rulebasedData = json.loads(rulebased(url))
+
+	for key in rulebasedData.keys():
+		data[key] = rulebasedData.get(key)
 
 	print(data)
-	# retVal = {key: value for (key, value) in (xhData.items() + anna.items())}
-	# print("returnValue = " + str(retVal))
 	return json.dumps(data)
 
 if __name__ == '__main__':

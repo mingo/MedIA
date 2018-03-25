@@ -12,14 +12,14 @@ import json
 # 
 # INPUT = url string
 # 
-# OUTPUT = [{'AuthorYN': 0-2, 'SiteYN': 0-2, 'Explanation': 01111}]
+# OUTPUT = [{'AuthorYN': 0-2, 'SiteYN': 0-2, 'Explanation': 1111}]
 # - Author/Site YN number: 0 non-fiable, 1 fiable, 2 unknown
 # - Explanation: 1er: publie des conspirations / 2eme: encourage de la méfiance envers les médias 
 #   / 3eme: encourage de la méfiance envers la science / 4eme: ne distingue pas opinion des faits
 
 # In[]:
-blacklist = pd.read_csv('blacklist.csv',header=None)
-goodlist = pd.read_csv('goodlist.csv',header=None)
+blacklist = pd.read_csv('./data/blacklist.csv', header=None)
+goodlist = pd.read_csv('./data/goodlist.csv', header=None)
 
 # In[]:
 
