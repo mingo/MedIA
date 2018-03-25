@@ -1,4 +1,4 @@
-# MédIA
+# Méd!A
 
 ## Requirement
 * Python 3 and higher
