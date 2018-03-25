@@ -12,23 +12,32 @@
 	</head>
 	<body>
 		<div class="loginPage">
-			<div class="form" role="main">
+			<div class="form" role="main" >
 				<form>
 					<img id="logo" src="/assets/Media.png" alt="Media">
 					<h1 class="quote">Méd!A, un détecteur intelligent de fausses nouvelles</h1>
-					<label>
-						.
-						<input type="text" placeholder = "Insérer le lien à l'article">
-					</label>
-					<input type="button" class="button" value="Analyser" />
+					<!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+					<div id="p1" >
+						<label>
+							<input type="text" placeholder = "Insérer le lien à l'article">
+						</label>
+						<input type="button" class="button" value="Analyser" onclick="hideDiv1()"/>
+					</div>
+					<!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+					<div id="p2" style="display: none">
+						<h1 id="YN">
+						</h1>
+						<h1 class="title" id="score"></h1>
+						<h2 class="bodyText" id="failDetail"></h2>
+						<input id = "btn" type="button" class="button" value="Back" onclick="hideDiv2()"/>
+					</div>
+					<!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 				</form>
 			</div>
 		</div>
-	</body>
 	<div class="breakPage">
 		<h1 class="title">Pourquoi Utiliser Méd!A</h1>
 	</div>
-	<body>
 		<div class="background">
 			<div class="infoPage">
 					<h1 class="label">Intelligence</h1>

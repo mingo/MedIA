@@ -123,3 +123,17 @@ input[type="text"]{
 .temp{
 	font-style: italic;
 }
+.p1{
+	position: absolute;
+	z-index: 1;
+}
+.p2{
+	position: absolute;
+	z-index: 2;
+	margin: 0;
+}
+#failDetail{
+	font-weight: bolder;
+	font-family: "Roboto", monospace;
+	margin-bottom:10%;
+}
