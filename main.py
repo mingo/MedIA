@@ -1,6 +1,5 @@
 from flask import Flask, send_from_directory, json, request
 
-from NeuralNetwork import algorithm, parse_media_press
 
 app = Flask(__name__, static_url_path='')
 
