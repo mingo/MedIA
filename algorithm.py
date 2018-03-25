@@ -40,14 +40,14 @@ def convert_text_to_index_array(text, verbal=False):
 
 def algorithm(evalSentence):
     if len(evalSentence) == 0:
-        return [-1,-1]
+        return [-1,-1.]
 
     testArr = convert_text_to_index_array(evalSentence)
     data = tokenizer.sequences_to_matrix([testArr], mode='binary')
     
     pred = model.predict(data)
     
-    result = [np.argmax(pred), pred[0][np.argmax(pred)]]
+    result = [int(np.argmax(pred)), float(pred[0][np.argmax(pred)])]
     
     return result
 
@@ -67,7 +67,7 @@ def parse_media_press(url):
     paragraphs = "\n".join(paragraphs_ls)
     
     if paragraphs == "":
-        return ""
+        return "Invalid"
     
     return paragraphs
     
