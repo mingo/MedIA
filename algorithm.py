@@ -11,19 +11,19 @@ max_words = 5000
 
 
 # Load model and weights
-json_file = open('model.json', 'r')
+json_file = open('algorithms/model.json', 'r')
 loaded_model_json = json_file.read()
 json_file.close()
 
 model = model_from_json(loaded_model_json)
-model.load_weights('model.h5')
+model.load_weights('algorithms/model.h5')
 
 
 # Load the tokenizer trained on the dictionary
 tokenizer = Tokenizer(num_words=max_words)
 
 # Load the dictionary
-with open('dictionary.json', 'r') as dictionary_file:
+with open('algorithms/dictionary.json', 'r') as dictionary_file:
     dictionary = json.load(dictionary_file)
     
 
