@@ -36,22 +36,23 @@ function verify(jsonFile){
 		document.getElementById("YN").innerHTML="Article Fiable!";
 		document.getElementById("score").innerHTML=(jsonFile.trustLevel * 100) + "% niveau de confiance";
 	} else {
-		document.getElementById("YN").innerHTML="Article N'est Fiable!";
+		document.getElementById("YN").innerHTML="Article N'est Pas Fiable!";
 		document.getElementById("score").innerHTML=(jsonFile.trustLevel * 100) + "% niveau de confiance";
 
-		let list = "L'article est non fiable pour les raisons suivantes:\n";
+		let list = "L'article est non fiable pour les raisons suivantes:<ul>";
 		if (jsonFile.Explanation[0] == 1){
-			list += "- Partage de conspirations\n";
+			list += "<li>Partage de conspirations</li>";
 		}
 		if (jsonFile.Explanation[1] == 1) {
-			list += "- Présentation de faits alternatifs à ceux qui sont vérifiables\n";
+			list += "<li>Présentation de faits alternatifs à ceux qui sont vérifiables</li>";
 		}
 		if (jsonFile.Explanation[2] == 1) {
-			list +="- Encouragement de la méfiance envers la science\n";
+			list +="<li>Encouragement de la méfiance envers la science</li>";
 		}
 		if (jsonFile.Explanation[3] == 1) {
-			list += "- Ommission d'informations qui ne conviennent pas à la vision de l'auteur";
+			list += "<li>Ommission d'informations qui ne conviennent pas à la vision de l'auteur</li>";
 		}
+		list += "</ul>"
 
 		document.getElementById("failDetail").innerHTML=list;
 		console.log(list);

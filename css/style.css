@@ -71,7 +71,7 @@ input{
 .quote{
 	font-family: "Roboto", sans-serif;
 	font-weight: lighter;
-	font-size: 18px;
+	font-size: 24px;
 	margin: 0 0 20% 0;
 	color: #474747;
 }
@@ -142,4 +142,9 @@ input[type="text"]{
 }
 #score{
 	margin-top: 2%;
+}
+
+li {
+	list-style-type: circle;
+	text-align: left;
 }
