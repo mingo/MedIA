@@ -67,7 +67,7 @@ def parse_media_press(url):
     paragraphs = "\n".join(paragraphs_ls)
     
     if paragraphs == "":
-        return ""
+        return "Invalid"
     
     return paragraphs
     
