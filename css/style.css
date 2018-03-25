@@ -137,3 +137,9 @@ input[type="text"]{
 	font-family: "Roboto", monospace;
 	margin-bottom:10%;
 }
+#YN{
+	margin-bottom: 2%;
+}
+#score{
+	margin-top: 2%;
+}
